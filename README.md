@@ -15,8 +15,9 @@ This repository will guide you through constructing a multi-agent AI application
 > GraphRAG (local & global search) is configured to support local models from Ollama for inference and embedding.
 > AutoGen is extended to support function calling with non-OpenAI LLMs from Ollama via the Lite-LLM proxy server.
 > Provide a Chainlit UI for continuous conversations, multi-threading, and user input settings.
+> 
 
-![Flow Diagram]([https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/1721017707759.jpg](https://github.com/Netizine/GraphRAG_AutoGen/blob/main/images/flow_diagram.jpg)?raw=true)
+![Flow Diagram](https://github.com/Netizine/GraphRAG_AutoGen/blob/main/images/flow_diagram.jpg?raw=true)
 
 ## Installation and Setup on Windows
 
