@@ -23,6 +23,7 @@ This repository will guide you through constructing a multi-agent AI application
 
 Follow these steps to set up and run AutoGen and GraphRAG Local with Ollama and Chainlit UI on Windows:
 1. Install LLMs:
+
    Visit **[Ollama's](https://ollama.com/download/windows)** website for installation files.
    ```
    ollama pull mistral
@@ -30,7 +31,7 @@ Follow these steps to set up and run AutoGen and GraphRAG Local with Ollama and 
    ollama pull llama3.1
    ollama serve
    ```
-2. Create python environment and install packages:
+3. Create python environment and install packages:
    ```
    git clone https://github.com/Netizine/GraphRAG_AutoGen.git
    cd GraphRAG_AutoGen
@@ -38,26 +39,26 @@ Follow these steps to set up and run AutoGen and GraphRAG Local with Ollama and 
    ./venv/Scripts/activate
    pip install -r requirements.txt
    ```
-3. Initiate GraphRAG root folder:
+4. Initiate GraphRAG root folder:
    ```
    mkdir input
    python -m graphrag.index --init  --root .
    cp ./utils/settings.yaml ./
    ```
-4. Replace 'embedding.py' and 'openai_embeddings_llm.py' in the GraphRAG package folder using files from Utils folder:
+5. Replace 'embedding.py' and 'openai_embeddings_llm.py' in the GraphRAG package folder using files from Utils folder:
    ```
    cp ./utils/openai_embeddings_llm.py .\venv\Lib\site-packages\graphrag\llm\openai\openai_embeddings_llm.py
    cp ./utils/embedding.py .\venv\Lib\site-packages\graphrag\query\llm\oai\embedding.py 
    ```
-5. Create embeddings and knowledge graph:
+6. Create embeddings and knowledge graph:
    ```
    python -m graphrag.index --root .
    ```
-6. Start the Lite-LLM proxy server:
+7. Start the Lite-LLM proxy server:
    ```
    litellm --model ollama_chat/llama3.1
    ```
-7. Run the app:
+8. Run the app:
    ```
    chainlit run appUI.py
    ```
