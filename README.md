@@ -12,8 +12,11 @@ Retrieval-augmented generation (RAG) is a powerful tool that equips large langua
 
 This repository will guide you through constructing a multi-agent AI application with a GraphRAG retrieval system, which operates on your local machine. The key components of this application are:
 > GraphRAG’s knowledge search methods are integrated with an AutoGen agent via function calling.
+
 > GraphRAG (local & global search) is configured to support local models from Ollama for inference and embedding.
+
 > AutoGen is extended to support function calling with non-OpenAI LLMs from Ollama via the Lite-LLM proxy server.
+
 > Provide a Chainlit UI for continuous conversations, multi-threading, and user input settings.
 
 ![Flow Diagram](https://github.com/Netizine/GraphRAG_AutoGen/blob/main/images/flow_diagram.jpg?raw=true)
