@@ -8,6 +8,4 @@ This application integrates GraphRAG with AutoGen agents, powered by local LLMs 
 server.
  - **Interactive UI:** - Deploying Chainlit UI to handle continuous conversations, multi-threading, and user input settings.
 
-## Useful Links 🔗
 
-- **Medium Article:** Microsoft's GraphRAG + AutoGen + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚
